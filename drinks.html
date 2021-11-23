@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Create drinks</title>
+    <link rel="stylesheet" href="./drinks.css" />
+    <script src="./drinks_data.js"></script>
+  </head>
+  <body>
+    <div class="main">
+      <div>
+        <h1>COFFEE</h1>
+
+        <div class="coffee-set"></div>
+
+        <form class="radio-cont">
+          <legend>How much sugar do you want:</legend>
+
+          <label for="s-sugarless">Sugarless</label>
+          <input
+            type="radio"
+            name="sugar"
+            id="s-sugarless"
+            value="0"
+            class="sugar"
+          />
+
+          <label for="s-one">One</label>
+          <input type="radio" name="sugar" id="s-one" value="1" class="sugar" />
+
+          <label for="s-two">Two</label>
+          <input type="radio" name="sugar" id="s-two" value="2" class="sugar" />
+
+          <label for="s-three">Three</label>
+          <input
+            type="radio"
+            name="sugar"
+            id="s-three"
+            value="3"
+            class="sugar"
+          />
+        </form>
+      </div>
+
+      <div class="backdrop" hidden>
+        <div class="modal"></div>
+      </div>
+
+      <div>
+        <h1>ALCOHOL</h1>
+
+        <div class="alcohol-set"></div>
+      </div>
+    </div>
+
+    <script src="./create_Drinks.js"></script>
+  </body>
+</html>
